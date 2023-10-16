@@ -46,23 +46,25 @@ Developed by: MOHAMED ATHIL B
 RegisterNumber: 212222230081
 
 ### half subractor:
-
-module ex4(a,b,difference,borrow);
+```
+module half(a,b,s,c);
 input a,b;
-output difference,borrow;
-assign difference = (a^b);
-assign borrow = (~a&b);
+output s,c;
+assign s = a^b;
+assign c = ~a&b;
+endmodule
+```
 endmodule
 
 ### full subractor:
-
-module exp4(a,b,bin,diff,borrow);
+```
+module half(a,b,bin,diff,borrow);
 input a,b,bin;
 output diff,borrow;
-assign diff = (a^b^bin);
-assign borrow = (~a&b)|(~(a^b)&bin);
+assign diff = a^b^bin;
+assign borrow = ~a&b | ~(a^b)&bin;
 endmodule
-
+```
 ## Output:
 
 ## Truthtable
