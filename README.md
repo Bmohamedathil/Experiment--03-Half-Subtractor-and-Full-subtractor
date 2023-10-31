@@ -45,54 +45,53 @@ Developed by: MOHAMED ATHIL B
 
 RegisterNumber: 212222230081
 
-### half subractor:
+### half subtractor:
 ```
-module half(a,b,s,c);
-input a,b;
+module half(A,B,s,c);
+input A,B;
 output s,c;
-assign s = a^b;
-assign c = ~a&b;
+assign s = A^B;
+assign c = ~A&B;
 endmodule
 ```
 endmodule
 
-### full subractor:
+### full subtractor:
 ```
-module half(a,b,bin,diff,borrow);
-input a,b,bin;
+module half(A,B,bin,diff,borrow);
+input A,B,bin;
 output diff,borrow;
-assign diff = a^b^bin;
-assign borrow = ~a&b | ~(a^b)&bin;
+assign diff = A^B^bin;
+assign borrow = ~(A&B) | ~(A^B)&bin;
 endmodule
 ```
 ## Output:
 
 ## Truthtable
 
-### half subractor
+### half subtractor
 
 ![ha](https://github.com/Praveen0500/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/120218611/0ac1ac6a-1e5b-4b80-9246-a1026e0fb65e)
 
-### full subractor
+### full subtractor
 ![fu](https://github.com/Praveen0500/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/120218611/36f561e9-0ea3-4dd8-8857-8b3e85710775)
-
 
 
 ##  RTL realization
 
-### half subractor 
+### half subtractor 
 ![de 4 i)a](https://github.com/Bmohamedathil/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/119560261/9fdf9823-111c-4730-aac8-9d18b78f02fa)
 
-### full subractor
+### full subtractor
 ![de 4 ii) a](https://github.com/Bmohamedathil/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/119560261/805e9d93-04a0-4777-a6c6-cc9460db62b0)
 
 ## Timing diagram 
 
-### half subractor
+### half subtractor
 ![de 4 i)b](https://github.com/Bmohamedathil/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/119560261/20f3e6d4-e960-48b2-a744-7e0de2751006)
 
 
-### full subractor
+### full subtractor
 
 ![de 4 ii) b](https://github.com/Bmohamedathil/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/119560261/1d0c9e51-5756-4782-8119-ec40ae02c36b)
 
